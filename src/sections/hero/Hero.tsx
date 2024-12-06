@@ -10,6 +10,7 @@ import unknownUni from "@/assets/university-unknown.avif";
 import standfordUni from "@/assets/stanfordimg.avif";
 import nanyanuni from "@/assets/nanyanuni.avif";
 import nusuni from "@/assets/nusuni.avif";
+import { motion } from "framer-motion";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 type Props = {};
@@ -22,21 +23,51 @@ export default function HeroSection({}: Props) {
       >
         <SecondaryButton />
 
-        <div className="font-bold md:text-6xl flex flex-col md:gap-3 gap-1 text-4xl ">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: "50px" },
+            visible: { opacity: 1, y: 0 },
+          }}
+          className="font-bold md:text-6xl flex flex-col md:gap-3 gap-1 text-4xl "
+        >
           <div>Upgrade Experience</div>
           <div>Not Hardware</div>
-        </div>
-        <div className="text-neutral-60 md:px-0 px-10">
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: "50px" },
+            visible: { opacity: 1, y: 0 },
+          }}
+          className="text-neutral-60 md:px-0 px-10"
+        >
           ByteSky delivers high-performance GPU/CPU instances and virtual
           machines at fraction of traditional costs.
-        </div>
-
-        <a
-          href="https://calendly.com/abhiraj-bytesky/introductory-call"
-          target="_blank"
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: "50px" },
+            visible: { opacity: 1, y: 0 },
+          }}
         >
-          <Button>Launch now</Button>
-        </a>
+          <a
+            href="https://calendly.com/abhiraj-bytesky/introductory-call"
+            target="_blank"
+          >
+            <Button>Launch now</Button>
+          </a>
+        </motion.div>
       </div>
       <div>
         <div className="flex flex-col overflow-hidden relative ">
@@ -61,7 +92,7 @@ export default function HeroSection({}: Props) {
         </div>
       </div>
       <div className="mt-20 flex items-center justify-center flex-col text-center">
-        <div className="text-neutral-40 font-semibold">
+        <div className="text-neutral-40 ">
           Proven & Approved: We’ve Tested Our Magic in Top Institutes!
         </div>
         <InfiniteMovingCardsDemo />
@@ -72,14 +103,22 @@ export default function HeroSection({}: Props) {
 
 const SecondaryButton = () => {
   return (
-    <div
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      variants={{
+        hidden: { opacity: 0, y: "50px" },
+        visible: { opacity: 1, y: 0 },
+      }}
       style={{ boxShadow: "0 1px 3px #0000000f,0 2px 4px 1px #0000001a" }}
       className="rounded-full border bg-neutral-0 p-[8px] flex items-center justify-center"
     >
       <div className="px-2 py-1 text-sm bg-red-500 rounded-full text-neutral-0 ">
         🔥A Cloud GPU & DaaS Platform
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -2,6 +2,8 @@
 import React, { useRef } from "react";
 import { useScroll, useTransform, motion, MotionValue } from "framer-motion";
 
+const mobileD1 = [0, 30];
+const mobileD2 = [0, 1];
 export const ContainerScroll = ({
   titleComponent,
   children,
@@ -30,19 +32,23 @@ export const ContainerScroll = ({
     return isMobile ? [0.7, 0.9] : [1, 0.9];
   };
 
-  const rotate = useTransform(scrollYProgress, [0, 1], [0, 20]);
+  const rotate = useTransform(
+    scrollYProgress,
+    isMobile ? mobileD2 : [0, 0.3, 0.6, 1],
+    isMobile ? mobileD1 : [30, 20, 10, 0]
+  );
   const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
   const translate = useTransform(scrollYProgress, [0, 1], [0, -20]);
 
   return (
     <div
-      className="py-16 flex items-center justify-center relative"
+      className=" md:h-[60rem] md:my-[-180px]  flex items-center justify-center relative"
       ref={containerRef}
     >
       <div
         className=" w-fit relative"
         style={{
-          perspective: "1000px",
+          perspective: "800px",
         }}
       >
         <Card rotate={rotate} translate={translate} scale={scale}>
@@ -82,7 +88,6 @@ export const Card = ({
       style={{
         rotateX: rotate,
         scale,
-        translateY: translate,
       }}
       className="w-fit h-fit -mt-12 mx-auto rounded-[30px] shadow-2xl"
     >

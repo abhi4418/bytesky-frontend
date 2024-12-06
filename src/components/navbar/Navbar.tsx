@@ -1,10 +1,10 @@
-type Props = {};
 import { AlignJustify, Menu, X } from "lucide-react";
 import logoimg from "../../assets/logoimg.avif";
 import { Button } from "../ui/button";
 import { useState } from "react";
 import { disablePageScroll, enablePageScroll } from "@fluejs/noscroll";
 import { useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 interface INavItems {
   name: string;
   url: string;
@@ -18,7 +18,7 @@ const NavItems: INavItems[] = [
   { name: "Testimonial", url: "#testimonial", id: "testimonial" },
   { name: "FAQ", url: "#faq", id: "faq" },
 ];
-export default function Navbar({}: Props) {
+export default function Navbar() {
   const pathname = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
   const toggleNavigation = () => {
@@ -38,7 +38,15 @@ export default function Navbar({}: Props) {
     setOpenNavigation(false);
   };
   return (
-    <nav
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      variants={{
+        hidden: { opacity: 0, y: "50px" },
+        visible: { opacity: 1, y: 0 },
+      }}
       className={`fixed top-[64px] z-[100] w-full bg-neutral-0 font-inter flex justify-between border-b border border-neutral-10 h-16  lg:px-20 px-6 `}
     >
       <a
@@ -94,7 +102,7 @@ export default function Navbar({}: Props) {
           onClick={toggleNavigation}
         />
       )}
-    </nav>
+    </motion.div>
   );
 }
 
