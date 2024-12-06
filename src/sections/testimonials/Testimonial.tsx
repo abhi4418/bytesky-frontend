@@ -40,7 +40,7 @@ export default function Testimonial({}: Props) {
   return (
     <div className="font-inter mt-20 md:w-full mx-auto py-10" id="testimonial">
       <div className="flex flex-col items-center justify-center mb-6">
-        <SectionHeading title="Features" logoType="Star" />
+        <SectionHeading title="Testimonial" logoType="Star" />
       </div>
       <div className="mx-auto text-center flex flex-col gap-4 mb-20">
         <div className="font-bold md:text-4xl text-3xl px-8">

@@ -173,7 +173,7 @@ export function FeatureSection() {
                     <FeatureCard className="flex gap-2 py-4">
                         <Logo7 />
                         <div className="flex flex-col gap-2">
-                            <div className="text-neutral-100 text-xl font-semibold">
+                            <div className="text-neutral-100 text-[1.2rem] font-semibold">
                                 Time-Efficient Workflows
                             </div>
                             <div className="text-neutral-60">
