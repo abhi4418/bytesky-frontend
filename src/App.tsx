@@ -5,6 +5,7 @@ import { FeatureSection } from "./sections/features/Feature";
 import { FooterSection } from "./sections/footer/Footer";
 import Testimonial from "./sections/testimonials/Testimonial";
 import FAQSection from "./sections/faq/Faq";
+import TeamSection from "./sections/team/TeamSection";
 function App() {
   return (
     <div className="font-inter h-full w-full overflow-x-hidden">
@@ -12,9 +13,10 @@ function App() {
       <Navbar />
       <HeroSection />
       <FeatureSection />
+      <TeamSection />
       <Testimonial />
-      <FooterSection />
       <FAQSection />
+      <FooterSection />
     </div>
   );
 }
