@@ -40,7 +40,7 @@ const FAQSection = () => {
           }}
           className="space-y-6"
         >
-          <SectionHeading title="FAQ" logoType="Link" className="w-fit" />
+          <SectionHeading title="FAQ" logoType="Link" className="w-fit md:mx-0 mx-auto" />
           <h2 className="text-4xl font-bold">Get to Know More About ByteSky</h2>
           <p className="text-gray-600">
             Explore the answers to common questions and learn how ByteCompute

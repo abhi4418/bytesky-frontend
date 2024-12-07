@@ -49,10 +49,7 @@ export function FooterSection() {
         })}
       </div>
       <div className="mt-20 max-w-screen-lg mx-auto h-[1px] bg-[#e5e5e8]"></div>
-      <div
-        className="flex md:flex-row md:justify-between max-w-screen-lg mx-auto pt-4 text-sm text-[#1c1c1c]
-            flex-col gap-4 justify-center text-center mb-16 md:mb-0"
-      >
+      <div className="flex md:flex-row md:justify-between max-w-screen-lg mx-auto pt-4 text-sm text-[#1c1c1c] flex-col gap-4 justify-center text-center md:mb-0">
         <div className="md:text-center">
           ©ByteSky Technologies Pvt. Ltd. 2024. All rights reserved. Privacy
           Policy.
