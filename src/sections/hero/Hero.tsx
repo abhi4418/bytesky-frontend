@@ -19,7 +19,7 @@ export default function HeroSection({}: Props) {
     <div>
       <div
         className="mt-[140px] md:mt-[124px] w-full font-inter text-center md:h-[80vh] h-full  md:w-[600px] mx-auto flex flex-col items-center justify-center md:gap-10 gap-6"
-        id="hero"
+        id=""
       >
         <SecondaryButton />
 
@@ -66,6 +66,19 @@ export default function HeroSection({}: Props) {
             target="_blank"
           >
             <Button>Launch now</Button>
+          </a>
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: "50px" },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          <a href="#faq" >
           </a>
         </motion.div>
       </div>

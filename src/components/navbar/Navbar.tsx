@@ -5,6 +5,7 @@ import { useState } from "react";
 import { disablePageScroll, enablePageScroll } from "@fluejs/noscroll";
 import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 interface INavItems {
   name: string;
   url: string;
@@ -30,6 +31,7 @@ export default function Navbar() {
       disablePageScroll();
     }
   };
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   const handleClick = () => {
     if (!openNavigation) return;
@@ -52,7 +54,7 @@ export default function Navbar() {
       <a
         // to={"hero"}
         // offset={-64}
-        href="#hero"
+        href="#"
         className="flex  justify-center items-center gap-2"
       >
         <img src={logoimg} className="w-10 h-10" />
@@ -63,7 +65,16 @@ export default function Navbar() {
           openNavigation ? "flex" : "md:flex hidden"
         } gap-4 items-center flex`}
       >
-        <div className="md:relative z-[100] flex flex-col items-center justify-center gap-6 m-auto md:flex-row bg-white w-full fixed right-0  md:py-0 top-32 md:top-0 py-4 md:border-none  border-b border-neutral-20 rounded transition-all delay-100">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0 }}
+          variants={{
+            hidden: { opacity: 0, y: isMobile ? "-20px" : "0px" },
+            visible: { opacity: 1, y: 0 },
+          }}
+          className="md:relative z-[-20] flex flex-col items-center justify-center gap-6 m-auto md:flex-row bg-white w-full fixed right-0  md:py-0 top-32 md:top-0 py-4 md:border-none  border-b border-neutral-20 rounded transition-all delay-100"
+        >
           {NavItems.map((item, i) => (
             <a
               // to={item.id}
@@ -86,7 +97,7 @@ export default function Navbar() {
           >
             <Button className="ml-4">Contact Us</Button>
           </a>
-        </div>
+        </motion.div>
       </div>
 
       {openNavigation ? (
