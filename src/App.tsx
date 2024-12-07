@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/Navbar";
 import { FeatureSection } from "./sections/features/Feature";
 import { FooterSection } from "./sections/footer/Footer";
 import Testimonial from "./sections/testimonials/Testimonial";
+import FAQSection from "./sections/faq/Faq";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <HeroSection  />
       <FeatureSection />
       <Testimonial />
+      <FAQSection />
       <FooterSection />
     </div>
   );
