@@ -14,7 +14,7 @@ import { motion } from "framer-motion"
 
 export function FeatureSection() {
     return (
-        <div id="features" className="mt-20">
+        <div id="features" className="pt-20">
             {/* top level heading */}
             <div className="flex flex-col items-center justify-center">
                 <SectionHeading title="Features" logoType="Star" />
