@@ -5,7 +5,6 @@ import { useScroll, useTransform, motion, MotionValue } from "framer-motion";
 const mobileD1 = [0, 30];
 const mobileD2 = [0, 1];
 export const ContainerScroll = ({
-  titleComponent,
   children,
 }: {
   titleComponent: string | React.ReactNode;
@@ -76,7 +75,6 @@ export const Card = ({
   rotate,
   scale,
   children,
-  translate,
 }: {
   rotate: MotionValue<number>;
   scale: MotionValue<number>;

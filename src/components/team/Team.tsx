@@ -1,4 +1,3 @@
-import React from "react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { motion } from "framer-motion";
 import adityapillai from "@/assets/adityapillaiimg.png";
