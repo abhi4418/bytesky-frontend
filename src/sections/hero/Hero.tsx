@@ -27,7 +27,7 @@ export default function HeroSection({}: Props) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6 }}
           variants={{
             hidden: { opacity: 0, y: "50px" },
             visible: { opacity: 1, y: 0 },
@@ -41,7 +41,7 @@ export default function HeroSection({}: Props) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           variants={{
             hidden: { opacity: 0, y: "50px" },
             visible: { opacity: 1, y: 0 },
@@ -55,7 +55,7 @@ export default function HeroSection({}: Props) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
           variants={{
             hidden: { opacity: 0, y: "50px" },
             visible: { opacity: 1, y: 0 },
@@ -72,14 +72,13 @@ export default function HeroSection({}: Props) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
           variants={{
             hidden: { opacity: 0, y: "50px" },
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <a href="#faq" >
-          </a>
+          <a href="#faq"></a>
         </motion.div>
       </div>
       <div>
@@ -94,22 +93,42 @@ export default function HeroSection({}: Props) {
               />
             </ContainerScroll>
           </div>
-          <div className="mx-auto gap-4 items-center justify-center flex flex-col font-inter text-xs text-neutral-60">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            variants={{
+              hidden: { opacity: 0, y: "50px" },
+              visible: { opacity: 1, y: 0 },
+            }}
+            className="mx-auto gap-4 items-center justify-center flex flex-col font-inter text-xs text-neutral-60"
+          >
             <div className="flex gap-6 ">
               <img className="md:w-10  w-8 " src={googleLogo} />
               <img className="md:w-10 w-8 " src={ycLogo} />
               <img className="md:w-10 w-8 " src={microsoftLogo} />
             </div>
             <div className="flex ">"Fueled by the Finest"</div>
-          </div>
+          </motion.div>
         </div>
       </div>
-      <div className="mt-20 flex items-center justify-center flex-col text-center">
-        <div className="text-neutral-40 ">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 ,delay:.3}}
+        variants={{
+          hidden: { opacity: 0, y: "50px" },
+          visible: { opacity: 1, y: 0 },
+        }}
+        className="mt-20 flex items-center justify-center flex-col text-center"
+      >
+        <div className="text-neutral-40 pb-8 ">
           Proven & Approved: We’ve Tested Our Magic in Top Institutes!
         </div>
         <InfiniteMovingCardsDemo />
-      </div>
+      </motion.div>
     </div>
   );
 }

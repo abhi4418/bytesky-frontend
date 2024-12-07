@@ -1,6 +1,6 @@
 import { ITestimonials } from "@/sections/testimonials/Testimonial";
-import {  Star } from "lucide-react";
-import {motion} from "framer-motion"
+import { Star } from "lucide-react";
+import { motion } from "framer-motion";
 export default function TestimonialCard({
   userName,
   userId,
@@ -9,12 +9,26 @@ export default function TestimonialCard({
   rating,
 }: ITestimonials) {
   return (
-    <motion.div whileHover={{
-      scale: 1.06,
-      transition: {
-        duration: 0.3
-      }
-    }} className="w-[340px]  h-auto bg-[#fbfbfb] border-[#e5e5e8] border p-6 rounded-lg cursor-pointer">
+    <motion.div
+      whileHover={{
+        scale: 1.06,
+        transition: {
+          duration: 0.3,
+        },
+      }}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.4,
+        delay: 0.4,
+      }}
+      variants={{
+        hidden: { opacity:0,y: 40 },
+        visible: { opacity:1,y: 0 },
+      }}
+      className="w-[340px]  h-auto bg-[#fbfbfb] border-[#e5e5e8] border p-6 rounded-lg cursor-pointer"
+    >
       <StarIcons count={rating} />
       <div className="mt-6">{review}</div>
       <div className="flex mt-8 gap-2">
@@ -34,7 +48,7 @@ const StarIcons = ({ count }: { count: number }) => {
   return (
     <div className="flex space-x-1">
       {Array.from({ length: count }, (_, index) => (
-        <Star key={index} className="text-yellow-400"  fill="#fbbf24"/>
+        <Star key={index} className="text-yellow-400" fill="#fbbf24" />
       ))}
     </div>
   );

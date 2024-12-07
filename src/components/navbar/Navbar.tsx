@@ -52,8 +52,7 @@ export default function Navbar() {
       className={`fixed top-[64px] z-[100] w-full bg-neutral-0 font-inter flex justify-between border-b border border-neutral-10 h-16  lg:px-20 px-6 `}
     >
       <a
-        // to={"hero"}
-        // offset={-64}
+      
         href="#"
         className="flex  justify-center items-center gap-2"
       >
@@ -73,12 +72,11 @@ export default function Navbar() {
             hidden: { opacity: 0, y: isMobile ? "-20px" : "0px" },
             visible: { opacity: 1, y: 0 },
           }}
-          className="md:relative z-[-20] flex flex-col items-center justify-center gap-6 m-auto md:flex-row bg-white w-full fixed right-0  md:py-0 top-32 md:top-0 py-4 md:border-none  border-b border-neutral-20 rounded transition-all delay-100"
+          className="md:relative flex flex-col items-center justify-center gap-6 m-auto md:flex-row bg-white w-full fixed right-0  md:py-0 top-32 md:top-0 py-4 md:border-none  border-b border-neutral-20 rounded transition-all delay-100"
         >
           {NavItems.map((item, i) => (
             <a
-              // to={item.id}
-              // offset={200}
+             
               href={item.url}
               key={i}
               onClick={handleClick}

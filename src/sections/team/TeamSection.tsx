@@ -1,9 +1,8 @@
-import React from 'react';
 import Team from '@/components/team/Team';
 
 const TeamSection = () => {
   return (
-    <section id="team" className="bg-gray-100 py-16">
+    <section id="team" className="pb-20">
       <Team />
     </section>
   );

@@ -1,19 +1,24 @@
 import { useState } from "react";
 import { SectionHeading } from "@/components/SectionHeading";
-
+import { motion } from "framer-motion";
 const FAQSection = () => {
   const faqs = [
     {
-        question: "How does ByteCompute achieve the lowest possible cost for GPU usage?",
-        answer: "Unlike traditional methods that rely solely on high-end GPUs, ByteCompute utilizes low-demand GPUs. By combining these GPUs, ByteCompute achieves performance equivalent to high-end GPUs at a significantly lower cost, optimizing resources without compromising on quality.",
+      question:
+        "How does ByteCompute achieve the lowest possible cost for GPU usage?",
+      answer:
+        "Unlike traditional methods that rely solely on high-end GPUs, ByteCompute utilizes low-demand GPUs. By combining these GPUs, ByteCompute achieves performance equivalent to high-end GPUs at a significantly lower cost, optimizing resources without compromising on quality.",
     },
     {
-        question: "Why is better availability important, and how does ByteCompute achieve it?",
-        answer: "When high-performance GPUs are scarce, it can be challenging to maintain efficiency. ByteCompute strategically pools low-demand GPUs, which enhances availability and ensures that users have consistent access to the computing power they need, even during peak demand periods.",
+      question:
+        "Why is better availability important, and how does ByteCompute achieve it?",
+      answer:
+        "When high-performance GPUs are scarce, it can be challenging to maintain efficiency. ByteCompute strategically pools low-demand GPUs, which enhances availability and ensures that users have consistent access to the computing power they need, even during peak demand periods.",
     },
     {
-        question: "How does ByteCompute ensure the sustainable use of resources?",
-        answer: "Balancing availability and performance is key to ByteCompute’s approach to sustainable GPU usage. ByteCompute minimizes waste by optimizing the use of existing resources, ensuring that operations are both eco-friendly and efficient.",
+      question: "How does ByteCompute ensure the sustainable use of resources?",
+      answer:
+        "Balancing availability and performance is key to ByteCompute’s approach to sustainable GPU usage. ByteCompute minimizes waste by optimizing the use of existing resources, ensuring that operations are both eco-friendly and efficient.",
     },
   ];
 
@@ -21,15 +26,25 @@ const FAQSection = () => {
     <section id="faq" className="py-24">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Left Side Content */}
-        <div className="space-y-6">
-        <SectionHeading
-            title="FAQ"
-            logoType="Link"
-            className="w-fit"
-          />
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.6,
+            delay: 0.6,
+          }}
+          variants={{
+            hidden: { opacity: 0, x: -40 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className="space-y-6"
+        >
+          <SectionHeading title="FAQ" logoType="Link" className="w-fit" />
           <h2 className="text-4xl font-bold">Get to Know More About ByteSky</h2>
           <p className="text-gray-600">
-            Explore the answers to common questions and learn how ByteCompute maximizes performance while minimizing costs.
+            Explore the answers to common questions and learn how ByteCompute
+            maximizes performance while minimizing costs.
           </p>
           <div className="flex items-center space-x-4">
             <input
@@ -41,7 +56,7 @@ const FAQSection = () => {
               Subscribe
             </button>
           </div>
-        </div>
+        </motion.div>
 
         {/* Right Side FAQs */}
         <div className="space-y-4">
@@ -54,11 +69,28 @@ const FAQSection = () => {
   );
 };
 
-const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
+const FAQItem = ({
+  question,
+  answer,
+}: {
+  question: string;
+  answer: string;
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.6,
+        delay: 0.6,
+      }}
+      variants={{
+        hidden: { opacity: 0, x: 40 },
+        visible: { opacity: 1, x: 0 },
+      }}
       className="border border-gray-300 rounded-md p-4 cursor-pointer"
       onClick={() => setIsOpen(!isOpen)}
     >
@@ -71,7 +103,7 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
           <p>{answer}</p>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 

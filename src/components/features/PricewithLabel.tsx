@@ -8,11 +8,11 @@ type PricewithLabelProps = {
 
 export function PricewithLabel({price , label , className} : PricewithLabelProps) {
   return (
-    <div className = {cn("flex flex-col gap-4 pr-2 pb-2 pt-2 center text-center" , className)}>
-        <div className="text-[#ff6522] font-semibold text-5xl ">
+    <div className = {cn("flex flex-col gap-2 center text-center" , className)}>
+        <div className="text-[#ff6522]  text-4xl lg:text-5xl ">
             {price}
         </div>
-        <div className="text-neutral-60 text-xl ">
+        <div className="text-neutral-60 md:text-xl text-center ">
             {label}
         </div>
     </div>

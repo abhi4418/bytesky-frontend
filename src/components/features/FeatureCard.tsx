@@ -4,7 +4,7 @@ import {motion} from "framer-motion";
 export function FeatureCard({children , className} : {children : React.ReactNode , className? : string}) {
   return (
     <motion.div className={cn(`bg-[#fcfcfc] py-10 px-6 border rounded-xl border-gray-100
-    shadow-md h-fit` , className)}
+    shadow h-fit ` , className)}
     whileHover={{
         scale: 1.06,
         transition: {
