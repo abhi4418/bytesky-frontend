@@ -22,6 +22,12 @@ export default {
         inter: ["Inter", "sans-serif"],
       },
       colors: {
+        dark: {
+          100: "#010101",
+          90: "#170f28",
+          80: "#181624",
+          0: "#5425b0",
+        },
         neutral: {
           100: "#000000",
           90: "#1A1A1A",

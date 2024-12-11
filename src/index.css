@@ -4,6 +4,7 @@
 @tailwind utilities;
 * {
   scroll-behavior: smooth;
+  /* background-color: black; */
 }
 @layer base {
   :root {

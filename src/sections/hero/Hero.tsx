@@ -12,13 +12,14 @@ import nanyanuni from "@/assets/nanyanuni.avif";
 import nusuni from "@/assets/nusuni.avif";
 import { motion } from "framer-motion";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import { SparklesCore } from "@/components/ui/sparkles";
 
 type Props = {};
 export default function HeroSection({}: Props) {
   return (
-    <div>
+    <div className="bg-dark-100">
       <div
-        className="mt-[140px] md:mt-[124px] w-full font-inter text-center md:h-[80vh] h-full  md:w-[600px] mx-auto flex flex-col items-center justify-center md:gap-10 gap-6"
+        className="mt-[124px] md:mt-[124px] w-full font-inter text-center md:h-[80vh] h-full  md:w-[600px] mx-auto flex flex-col items-center justify-center md:gap-8 gap-6"
         id=""
       >
         <SecondaryButton />
@@ -32,10 +33,34 @@ export default function HeroSection({}: Props) {
             hidden: { opacity: 0, y: "50px" },
             visible: { opacity: 1, y: 0 },
           }}
-          className="font-bold md:text-6xl flex flex-col md:gap-3 gap-1 text-4xl "
+          className="font-bold md:text-6xl flex flex-col md:gap-3 gap-1 text-4xl text-neutral-0"
         >
-          <div>Upgrade Experience</div>
-          <div>Not Hardware</div>
+          <div className="h-[160px] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+            <h1 className="md:text-6xl text-4xl font-bold text-center text-white relative z-20 gap-2 flex flex-col">
+              <div>Upgrade Experience</div>
+              <div>Not Hardware</div>
+            </h1>
+            <div className="w-[40rem] h-40 mt-2 relative">
+              <div className="">
+                <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+                <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+                <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+                <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+              </div>
+
+              <SparklesCore
+                background="transparent"
+                minSize={0.4}
+                maxSize={0.7}
+                particleDensity={800}
+                className="w-full h-10"
+                particleColor="#FFFFFF"
+              />
+
+              {/* Radial Gradient to prevent sharp edges */}
+              <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+            </div>
+          </div>
         </motion.div>
         <motion.div
           initial="hidden"
@@ -46,7 +71,7 @@ export default function HeroSection({}: Props) {
             hidden: { opacity: 0, y: "50px" },
             visible: { opacity: 1, y: 0 },
           }}
-          className="text-neutral-60 md:px-0 px-10"
+          className="text-neutral-40 md:px-0 px-10"
         >
           ByteSky delivers high-performance GPU/CPU instances and virtual
           machines at fraction of traditional costs.
@@ -117,7 +142,7 @@ export default function HeroSection({}: Props) {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        transition={{ duration: 0.6 ,delay:.3}}
+        transition={{ duration: 0.6, delay: 0.3 }}
         variants={{
           hidden: { opacity: 0, y: "50px" },
           visible: { opacity: 1, y: 0 },
@@ -144,10 +169,10 @@ const SecondaryButton = () => {
         hidden: { opacity: 0, y: "50px" },
         visible: { opacity: 1, y: 0 },
       }}
-      style={{ boxShadow: "0 1px 3px #0000000f,0 2px 4px 1px #0000001a" }}
-      className="rounded-full border bg-neutral-0 p-[8px] flex items-center justify-center"
+      // style={{ boxShadow: "0 1px 3px #0000000f,0 2px 4px 1px #0000001a" }}
+      className="rounded-full md:mt-0 mt-6 bg-dark-80 p-[8px] flex items-center justify-center"
     >
-      <div className="px-2 py-1 text-sm bg-red-500 rounded-full text-neutral-0 ">
+      <div className="px-2 py-1 text-sm bg-dark-80 rounded-full text-neutral-0 ">
         🔥A Cloud GPU & DaaS Platform
       </div>
     </motion.div>
@@ -156,7 +181,7 @@ const SecondaryButton = () => {
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <div className=" rounded-md flex flex-col antialiased bg-white  items-center justify-center relative overflow-hidden">
+    <div className=" rounded-md flex flex-col antialiased bg-dark-100  items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
         items={testimonials}
         direction="left"
