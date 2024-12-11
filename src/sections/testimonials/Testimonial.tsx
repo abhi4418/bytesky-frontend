@@ -23,7 +23,7 @@ const Testimonials: ITestimonials[] = [
   {
     rating: 4,
     review:
-      "It’s so smooth, it feels like a native application. Sometimes I completely forget I'm working in a cloud PC and not on my own low end machine.",
+      "The performance is so seamless that I often forget I'm using a cloud PC. It's like working on a high-end machine.",
     userName: "Aditya Gupta",
     userId: "IISC",
     userImg: useravatar,
@@ -31,7 +31,7 @@ const Testimonials: ITestimonials[] = [
   {
     rating: 4,
     review:
-      "It’s so smooth, it feels like a native application. Sometimes I completely forget I'm working in a cloud PC and not on my own low end machine.",
+      "It’s hard to believe this isn’t a local setup. The responsiveness and speed make it feel just like a native application.",
     userName: "Aditya Gupta",
     userId: "IISC",
     userImg: useravatar,
@@ -39,11 +39,13 @@ const Testimonials: ITestimonials[] = [
 ];
 export default function Testimonial({}: Props) {
   return (
-    <div className="font-inter md:w-full mx-auto py-20" id="testimonial">
+    <div
+      className="font-inter md:w-full mx-auto py-20 bg-gradient-to-bl from-dark-90 via-neutral-100 to-neutral-100"
+      id="testimonial"
+    >
       <motion.div
         initial="hidden"
         whileInView="visible"
-        whileHover={{ scale: 1.1 }}
         viewport={{ once: true }}
         transition={{
           duration: 0.6,
@@ -60,7 +62,6 @@ export default function Testimonial({}: Props) {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        whileHover={{ scale: 1.1 }}
         viewport={{ once: true }}
         transition={{
           duration: 0.6,
@@ -72,10 +73,10 @@ export default function Testimonial({}: Props) {
         }}
         className="mx-auto text-center flex flex-col gap-4 mb-20"
       >
-        <div className="font-bold md:text-4xl text-3xl px-8">
+        <div className="font-bold md:text-4xl text-3xl px-8 text-neutral-0">
           Hear From Our Happy Clients
         </div>
-        <div className="md:text-base text-neutral-60 px-12">
+        <div className="md:text-base text-neutral-40 px-12">
           Discover how we've made a difference in their lives and businesses.
         </div>
       </motion.div>

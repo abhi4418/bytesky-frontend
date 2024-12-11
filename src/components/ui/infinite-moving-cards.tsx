@@ -89,7 +89,7 @@ export const InfiniteMovingCards = ({
             key={idx}
           >
             <img
-              className="h-12 md:h-20 flex items-center justify-center"
+              className="h-12  invert  md:h-20 flex items-center filter grayscale justify-center"
               src={item.img}
             />
           </li>

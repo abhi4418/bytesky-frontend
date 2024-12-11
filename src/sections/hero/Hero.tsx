@@ -18,7 +18,7 @@ import { SparklesCore } from "@/components/ui/sparkles";
 type Props = {};
 export default function HeroSection({}: Props) {
   return (
-    <div className="b bg-gradient-to-bl from-dark-90 via-neutral-100 to-neutral-100">
+    <div className="bg-gradient-to-bl from-dark-90 via-neutral-100 to-neutral-100">
       <div
         className="mt-[120px] md:mt-[136px] w-full font-inter text-center md:h-[80vh] h-full  md:w-[600px] mx-auto flex flex-col items-center justify-center md:gap-8 gap-6"
         id=""
@@ -58,7 +58,6 @@ export default function HeroSection({}: Props) {
                 particleColor="#FFFFFF"
               />
 
-              {/* Radial Gradient to prevent sharp edges */}
               <div className="absolute inset-0 w-full h-full [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
             </div>
           </div>
