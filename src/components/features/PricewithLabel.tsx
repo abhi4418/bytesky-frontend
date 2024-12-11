@@ -8,7 +8,7 @@ type PricewithLabelProps = {
 
 export function PricewithLabel({price , label , className} : PricewithLabelProps) {
   return (
-    <div className = {cn("flex flex-col gap-2 center text-center" , className)}>
+    <div className = {cn("flex flex-col gap-2 text-center md:text-left" , className)}>
         <div className="text-[#ff6522]  text-4xl lg:text-5xl ">
             {price}
         </div>

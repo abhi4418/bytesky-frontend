@@ -23,7 +23,7 @@ export function SectionHeading({
             "rgba(50, 50, 93, 0.25) fu0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
         }}
         className="py-2 px-4  rounded-full  bg-dark-80 flex gap-2 items-center justify-center
-          shadow-md"
+          shadow-md border border-neutral-60"
       >
         {logoType === "Lock" ? (
           <LockIcon />

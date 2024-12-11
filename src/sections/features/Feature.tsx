@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 
 export function FeatureSection() {
   return (
-    <div id="features" className="py-20">
+    <div id="features" className="bg-dark-100 py-20">
       {/* top level heading */}
       <motion.div
         initial="hidden"
@@ -41,10 +41,10 @@ export function FeatureSection() {
         }}
         className="max-w-screen-md mx-auto flex flex-col items-center justify-center pt-8"
       >
-        <div className="text-neutral-100 text-4xl font-semibold text-center">
+        <div className="text-neutral-0 text-4xl font-semibold text-center">
           Your Ultimate Computing Solution
         </div>
-        <div className=" text-center pt-8 md:text-base text-neutral-60 px-12">
+        <div className=" text-center pt-8 md:text-base text-neutral-40 px-12">
           Discover how our solution can revolutionize the way you work . Explore
           a myriad of features designed to enhance your productivity.
         </div>
@@ -56,7 +56,7 @@ export function FeatureSection() {
         <div className="flex flex-col gap-2 col-span-1">
           <FeatureCard>
             <Logo1 />
-            <div className="text-neutral-100 text-xl font-semibold pt-4">
+            <div className="text-neutral-0 text-xl font-semibold pt-4">
               Tailored Cloud Configurations
             </div>
             <div className="text-neutral-60 text pt-4">
@@ -82,21 +82,21 @@ export function FeatureSection() {
                 sizes="282px"
                 src="https://framerusercontent.com/images/Ye9h4tZhHZNbYAxBdTfPOOIpaAA.png?lossless=1"
                 alt=""
-                className="block w-full h-full rounded-inherit object-center object-contain image-auto"
+                className="invert block w-full h-full rounded-inherit object-center object-contain image-auto"
               />
             </motion.div>
           </FeatureCard>
           <FeatureCard className="col-span-1">
             <Logo3 />
-            <div className="text-neutral-100 text-xl font-semibold pt-4">
+            <div className="text-neutral-0 text-xl font-semibold pt-4">
               High-Performance GPU Instances
             </div>
-            <div className="text-neutral-60 text pt-4">
+            <div className="text-neutral-40 text pt-4">
               Access powerful GPUs affordably with our innovative approach. We
               combine multiple low-demand GPUs to perform equivalently to
               high-end GPUs, offering significant cost savings
             </div>
-            <div className="text-neutral-60 text pt-4">
+            <div className="text-neutral-40 text pt-4">
               Our solution provides a pay-as-you-go instance to GPU/CPU with
               pre-configured frameworks on a user-friendly interface. Features
               include seamless UI/UX for quick GPU provisioning, resource usage
@@ -110,10 +110,10 @@ export function FeatureSection() {
         <div className="flex flex-col gap-2 col-span-1">
           <FeatureCard>
             <Logo2 />
-            <div className="text-neutral-100 text-xl font-semibold pt-4">
+            <div className="text-neutral-0 text-xl font-semibold pt-4">
               Virtual Machines on Existing Hardware
             </div>
-            <div className="text-neutral-60 text pt-4">
+            <div className="text-neutral-40 text pt-4">
               Give your old systems a new lease on life with our cloud-based
               VMs! Use your existing hardware to run a VM in the cloud, slashing
               e-waste and keeping costs down. With pay-as-you-go pricing, easy
@@ -124,10 +124,10 @@ export function FeatureSection() {
           </FeatureCard>
           <FeatureCard>
             <Logo4 />
-            <div className="text-neutral-100 text-xl font-semibold pt-4">
+            <div className="text-neutral-0 text-xl font-semibold pt-4">
               Cost-Effective and Sustainable
             </div>
-            <div className="text-neutral-60 text pt-4">
+            <div className="text-neutral-40 text pt-4">
               Our approach offers significant cost savings compared to
               traditional hardware upgrades. By repurposing enterprise systems
               for schools and providing virtual solutions, we help reduce
@@ -149,7 +149,7 @@ export function FeatureSection() {
                 sizes="333px"
                 src="https://framerusercontent.com/images/XqKUvZZ5TEgB8AgyUCmjL18sN0.png"
                 alt=""
-                className="block w-full h-full rounded-inherit object-center object-contain image-auto"
+                className="invert block w-full h-full rounded-inherit object-center object-contain image-auto"
               />
             </motion.div>
           </FeatureCard>
@@ -161,10 +161,10 @@ export function FeatureSection() {
           <FeatureCard className="flex flex-col gap-2 py-4">
             <Logo5 />
             <div className="flex flex-col gap-2">
-              <div className="text-neutral-100 text-xl font-semibold">
+              <div className="text-neutral-0 text-xl font-semibold">
                 Professional Reporting
               </div>
-              <div className="text-neutral-60">
+              <div className="text-neutral-40">
                 Impress stakeholders with professionally crafted reports and
                 presentations.
               </div>
@@ -174,10 +174,10 @@ export function FeatureSection() {
           <FeatureCard className="flex flex-col gap-2 py-4">
             <Logo6 />
             <div className="flex flex-col gap-2">
-              <div className="text-neutral-100 text-xl font-semibold">
+              <div className="text-neutral-0 text-xl font-semibold">
                 Real-Time Updates
               </div>
-              <div className="text-neutral-60">
+              <div className="text-neutral-40">
                 Stay in the loop with real-time updates, ensuring everyone is on
                 the same page.
               </div>
@@ -187,10 +187,10 @@ export function FeatureSection() {
           <FeatureCard className="flex flex-col gap-2 py-4">
             <Logo7 />
             <div className="flex flex-col gap-2">
-              <div className="text-neutral-100 text-[1.2rem] font-semibold">
+              <div className="text-neutral-0 text-[1.2rem] font-semibold">
                 Time-Efficient Workflows
               </div>
-              <div className="text-neutral-60">
+              <div className="text-neutral-40">
                 Optimize your workflows and save time with efficient and
                 structured templates.
               </div>
@@ -215,7 +215,7 @@ export function FeatureSection() {
             <div className="flex flex-col items-center justify-center md:block">
               <SectionHeading title="Traction" logoType="Cart" />
             </div>
-            <div className="text-center md:text-left text-neutral-100 text-2xl font-semibold pt-4">
+            <div className="text-center md:text-left text-neutral-0 text-2xl font-semibold pt-4">
               Hey there! We're ByteSky, revolutionizing cloud computing.
             </div>
             <div className="text-neutral-60 text-base leading-tight pt-4 text-center md:text-left md:px-0 px-6">
@@ -224,7 +224,7 @@ export function FeatureSection() {
               and enterprises.
             </div>
 
-            <div className=" grid grid-cols-2 pt-8 px-auto mx-auto w-full gap-y-8 ">
+            <div className="grid grid-cols-2 pt-8 px-auto mx-auto w-full gap-y-8">
               <PricewithLabel
                 className="col-span-1"
                 price="$25M+"
@@ -264,7 +264,7 @@ export function FeatureSection() {
               sizes="min(min(100vw - 96px, 1440px), 580px)"
               src="https://framerusercontent.com/images/IDYNQ1Og4G2KwdcbqWUDOgdrLI.png"
               alt=""
-              className="block w-full h-full rounded-inherit object-center object-contain image-auto"
+              className="invert block w-full h-full rounded-inherit object-center object-contain image-auto"
             />
           </motion.div>
         </div>
