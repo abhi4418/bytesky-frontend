@@ -1,7 +1,6 @@
 import { LinkedInIcon } from "@/components/LinkedInIcon";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import logoimg from "../../assets/logoimg.avif";
 import logoimg2 from "../../assets/byteskylogo2.png";
 type FooterLink = {
   name: string;

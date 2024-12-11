@@ -1,12 +1,11 @@
+import { disablePageScroll, enablePageScroll } from "@fluejs/noscroll";
+import { motion } from "framer-motion";
 import { AlignJustify, Menu, X } from "lucide-react";
-import logoimg from "../../assets/logoimg.avif";
+import { useState } from "react";
+import { useMediaQuery } from "react-responsive";
+import { useLocation } from "react-router-dom";
 import logo2 from "../../assets/byteskylogo2.png";
 import { Button } from "../ui/button";
-import { useState } from "react";
-import { disablePageScroll, enablePageScroll } from "@fluejs/noscroll";
-import { useLocation } from "react-router-dom";
-import { motion } from "framer-motion";
-import { useMediaQuery } from "react-responsive";
 interface INavItems {
   name: string;
   url: string;
