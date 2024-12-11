@@ -88,7 +88,10 @@ export const InfiniteMovingCards = ({
             className="w-fit max-w-full relative flex-shrink-0  px-4 py-6"
             key={idx}
           >
-            <img className="h-12 md:h-20 flex items-center justify-center" src={item.img} />
+            <img
+              className="h-12 md:h-20 flex items-center justify-center"
+              src={item.img}
+            />
           </li>
         ))}
       </ul>

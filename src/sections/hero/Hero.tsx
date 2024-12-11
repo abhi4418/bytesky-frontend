@@ -1,5 +1,6 @@
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import heroimg from "@/assets/heroimg.webp";
+import heroimg2 from "@/assets/heorimg2.avif";
 import { Button } from "@/components/ui/button";
 import microsoftLogo from "@/assets/microsoft-logo.png";
 import ycLogo from "@/assets/yc-logo.avif";
@@ -17,9 +18,9 @@ import { SparklesCore } from "@/components/ui/sparkles";
 type Props = {};
 export default function HeroSection({}: Props) {
   return (
-    <div className="bg-dark-100">
+    <div className="b bg-gradient-to-bl from-dark-90 via-neutral-100 to-neutral-100">
       <div
-        className="mt-[124px] md:mt-[124px] w-full font-inter text-center md:h-[80vh] h-full  md:w-[600px] mx-auto flex flex-col items-center justify-center md:gap-8 gap-6"
+        className="mt-[120px] md:mt-[136px] w-full font-inter text-center md:h-[80vh] h-full  md:w-[600px] mx-auto flex flex-col items-center justify-center md:gap-8 gap-6"
         id=""
       >
         <SecondaryButton />
@@ -35,7 +36,7 @@ export default function HeroSection({}: Props) {
           }}
           className="font-bold md:text-6xl flex flex-col md:gap-3 gap-1 text-4xl text-neutral-0"
         >
-          <div className="h-[160px] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+          <div className="h-[160px] w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
             <h1 className="md:text-6xl text-4xl font-bold text-center text-white relative z-20 gap-2 flex flex-col">
               <div>Upgrade Experience</div>
               <div>Not Hardware</div>
@@ -58,7 +59,7 @@ export default function HeroSection({}: Props) {
               />
 
               {/* Radial Gradient to prevent sharp edges */}
-              <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+              <div className="absolute inset-0 w-full h-full [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
             </div>
           </div>
         </motion.div>
@@ -108,12 +109,12 @@ export default function HeroSection({}: Props) {
       </div>
       <div>
         <div className="flex flex-col overflow-hidden relative ">
-          <div className="w-[390px] md:w-[720px] mx-auto md:mt-0 mt-10 ">
+          <div className="w-[390px] md:w-[800px] mx-auto md:mt-0 mt-10 ">
             <ContainerScroll titleComponent={<></>}>
               <img
-                src={heroimg}
+                src={heroimg2}
                 alt="hero"
-                className="items-center justify-center rounded-4xl h-full"
+                className="items-center border border-dark-0  justify-center rounded-[20px] h-full"
                 draggable={false}
               />
             </ContainerScroll>

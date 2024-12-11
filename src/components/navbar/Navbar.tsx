@@ -50,7 +50,7 @@ export default function Navbar() {
         hidden: { opacity: 0, y: "50px" },
         visible: { opacity: 1, y: 0 },
       }}
-      className={`fixed top-[64px] z-[100] shadow-sm shadow-neutral-80 w-full bg-dark-100 font-inter flex justify-between border-b border-neutral-90  lg:px-20 px-6 md:h-[80px] h-[64px] `}
+      className={`fixed top-[56px] z-[100] shadow-sm shadow-neutral-80 w-full bg-dark-100 font-inter flex justify-between border-b border-neutral-90  lg:px-20 px-6 md:h-[80px] h-[64px] `}
     >
       <a href="#" className="flex  justify-center items-center gap-2">
         <img src={logo2} className="md:h-20 h-16" />
