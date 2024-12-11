@@ -2,6 +2,7 @@ import { LinkedInIcon } from "@/components/LinkedInIcon";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import logoimg from "../../assets/logoimg.avif";
+import logoimg2 from "../../assets/byteskylogo2.png";
 type FooterLink = {
   name: string;
   id: string;
@@ -19,7 +20,7 @@ export function FooterSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <footer className="w-screen bg-gradient-to-bl from-dark-90 via-neutral-100 to-neutral-100 pt-20">
+    <footer className="w-screen bg-dark-100 pt-20">
       <motion.div
         ref={ref}
         initial={{ y: 100, opacity: 0 }}
@@ -27,7 +28,7 @@ export function FooterSection() {
         transition={{ duration: 0.5, ease: "easeOut" }}
         className="text-neutral-0 flex items-center justify-center w-full mx-auto"
       >
-        <img className="w-[40px] h-[40px]" src={logoimg} alt="logo" />
+        <img className=" h-[40px]" src={logoimg2} alt="logo" />
         <div className="flex flex-col gap-2 pl-2">
           <div className="text-sm mb-[-6px]">ByteSky</div>
           <div className="text-sm text-neutral-40">Easy Compute</div>

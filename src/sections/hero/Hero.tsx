@@ -1,24 +1,23 @@
-import { ContainerScroll } from "@/components/ui/container-scroll-animation";
-import heroimg from "@/assets/heroimg.webp";
-import heroimg2 from "@/assets/heorimg2.avif";
-import { Button } from "@/components/ui/button";
-import microsoftLogo from "@/assets/microsoft-logo.png";
-import ycLogo from "@/assets/yc-logo.avif";
 import googleLogo from "@/assets/google-logo.avif";
 import harvardUni from "@/assets/harvardimg.avif";
+import heroimg2 from "@/assets/heorimg2.avif";
 import hyderabadUni from "@/assets/hyderabaduni.avif";
-import unknownUni from "@/assets/university-unknown.avif";
-import standfordUni from "@/assets/stanfordimg.avif";
+import microsoftLogo from "@/assets/microsoft-logo.png";
 import nanyanuni from "@/assets/nanyanuni.avif";
 import nusuni from "@/assets/nusuni.avif";
-import { motion } from "framer-motion";
+import standfordUni from "@/assets/stanfordimg.avif";
+import unknownUni from "@/assets/university-unknown.avif";
+import ycLogo from "@/assets/yc-logo.avif";
+import { Button } from "@/components/ui/button";
+import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { SparklesCore } from "@/components/ui/sparkles";
+import { motion } from "framer-motion";
 
 type Props = {};
 export default function HeroSection({}: Props) {
   return (
-    <div className="bg-gradient-to-bl from-dark-90 via-neutral-100 to-neutral-100">
+    <div className="">
       <div
         className="mt-[120px] md:mt-[136px] w-full font-inter text-center md:h-[80vh] h-full  md:w-[600px] mx-auto flex flex-col items-center justify-center md:gap-8 gap-6"
         id=""
@@ -41,7 +40,7 @@ export default function HeroSection({}: Props) {
               <div>Upgrade Experience</div>
               <div>Not Hardware</div>
             </h1>
-            <div className="w-[40rem] h-40 mt-2 relative">
+            <div className="w-[100%] md:w-[40rem] h-40 mt-2 relative">
               <div className="">
                 <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
                 <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
@@ -181,7 +180,7 @@ const SecondaryButton = () => {
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <div className=" rounded-md flex flex-col antialiased bg-dark-100  items-center justify-center relative overflow-hidden">
+    <div className=" rounded-md flex flex-col antialiased bg-none  items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
         items={testimonials}
         direction="left"

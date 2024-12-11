@@ -2,8 +2,8 @@
 import React, { useRef } from "react";
 import { useScroll, useTransform, motion, MotionValue } from "framer-motion";
 
-const mobileD1 = [0, 30];
-const mobileD2 = [0, 1];
+const mobileD1 = [0,20];
+const mobileD2 = [0, .4];
 export const ContainerScroll = ({
   children,
 }: {

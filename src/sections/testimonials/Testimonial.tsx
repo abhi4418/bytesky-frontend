@@ -40,7 +40,7 @@ const Testimonials: ITestimonials[] = [
 export default function Testimonial({}: Props) {
   return (
     <div
-      className="font-inter md:w-full mx-auto py-20 bg-gradient-to-bl from-dark-90 via-neutral-100 to-neutral-100"
+      className="font-inter md:w-full mx-auto py-20"
       id="testimonial"
     >
       <motion.div

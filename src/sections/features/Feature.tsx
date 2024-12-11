@@ -14,7 +14,10 @@ import { motion } from "framer-motion";
 
 export function FeatureSection() {
   return (
-    <div id="features" className="bg-dark-100 py-20">
+    <div
+      id="features"
+      className=" pt-20"
+    >
       {/* top level heading */}
       <motion.div
         initial="hidden"
