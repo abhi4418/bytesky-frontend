@@ -19,7 +19,7 @@ export function FooterSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <footer className="w-screen bg-dark-100 pt-20">
+    <footer className="w-screen pt-20">
       <motion.div
         ref={ref}
         initial={{ y: 100, opacity: 0 }}
@@ -29,7 +29,7 @@ export function FooterSection() {
       >
         <img className=" h-[40px]" src={logoimg2} alt="logo" />
         <div className="flex flex-col gap-2 pl-2">
-          <div className="text-sm mb-[-6px]">ByteSky</div>
+          <div className="text-sm mb-[-6px]">ByteCompute</div>
           <div className="text-sm text-neutral-40">Easy Compute</div>
         </div>
       </motion.div>

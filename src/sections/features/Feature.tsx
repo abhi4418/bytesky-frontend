@@ -54,7 +54,7 @@ export function FeatureSection() {
       </motion.div>
 
       {/* feature cards begin here */}
-      <div className="pt-20  md:w-full lg:px-28 md:px-12 px-4 md:mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="pt-20  md:w-full lg:px-44 md:px-12 px-4 md:mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* left side */}
         <div className="flex flex-col gap-2 col-span-1">
           <FeatureCard>
@@ -63,7 +63,7 @@ export function FeatureSection() {
               Tailored Cloud Configurations
             </div>
             <div className="text-neutral-60 text pt-4">
-              Explore ByteSky's range of configurations, from Nimbus to ApexSky,
+              Explore ByteCompute's range of configurations, from Nimbus to ApexSky,
               designed to meet diverse computing needs. Our offerings cater to
               startups, enterprises, researchers, and more, with options ranging
               from basic cloud space to cutting-edge high-performance computing
@@ -159,7 +159,7 @@ export function FeatureSection() {
         </div>
       </div>
 
-      <div className="md:w-full md:px-12 lg:px-28 px-4  pt-10">
+      <div className="md:w-full md:px-12 lg:px-44 px-4  pt-10">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 md:gap-4  ">
           <FeatureCard className="flex flex-col gap-2 py-4">
             <Logo5 />
@@ -219,7 +219,7 @@ export function FeatureSection() {
               <SectionHeading title="Traction" logoType="Cart" />
             </div>
             <div className="text-center md:text-left text-neutral-0 text-2xl font-semibold pt-4">
-              Hey there! We're ByteSky, revolutionizing cloud computing.
+              Hey there! We're ByteCompute, revolutionizing cloud computing.
             </div>
             <div className="text-neutral-60 text-base leading-tight pt-4 text-center md:text-left md:px-0 px-6">
               Driven by a relentless commitment to providing cost-effective,

@@ -1,10 +1,10 @@
 import { disablePageScroll, enablePageScroll } from "@fluejs/noscroll";
 import { motion } from "framer-motion";
 import { AlignJustify, Menu, X } from "lucide-react";
+import logo2 from "../../assets/byteskylogo2.png";
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { useLocation } from "react-router-dom";
-import logo2 from "../../assets/byteskylogo2.png";
 import { Button } from "../ui/button";
 interface INavItems {
   name: string;

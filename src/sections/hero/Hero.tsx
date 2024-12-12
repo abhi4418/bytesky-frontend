@@ -1,4 +1,4 @@
-import googleLogo from "@/assets/google-logo.avif";
+import googleLogo from "@/assets/google-logo.png";
 import harvardUni from "@/assets/harvardimg.avif";
 import heroimg2 from "@/assets/heorimg2.avif";
 import hyderabadUni from "@/assets/hyderabaduni.avif";
@@ -35,12 +35,12 @@ export default function HeroSection({}: Props) {
           }}
           className="font-bold md:text-6xl flex flex-col md:gap-3 gap-1 text-4xl text-neutral-0"
         >
-          <div className="h-[160px] w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
+          <div className="h-[140px] md:h-[180px] w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
             <h1 className="md:text-6xl text-4xl font-bold text-center text-white relative z-20 gap-2 flex flex-col">
-              <div>Upgrade Experience</div>
-              <div>Not Hardware</div>
+              <div>Shaping the Future </div>
+              <div>of Technology</div>
             </h1>
-            <div className="w-[100%] md:w-[40rem] h-40 mt-2 relative">
+            <div className="w-[100%] md:w-[40rem] h-40 mt-4 relative">
               <div className="">
                 <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
                 <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
@@ -70,10 +70,10 @@ export default function HeroSection({}: Props) {
             hidden: { opacity: 0, y: "50px" },
             visible: { opacity: 1, y: 0 },
           }}
-          className="text-neutral-40 md:px-0 px-10"
+          className="text-neutral-40 md:px-0 px-10 md:text-lg text-sm"
         >
-          ByteSky delivers high-performance GPU/CPU instances and virtual
-          machines at fraction of traditional costs.
+          ByteSky Group is a dynamic tech company with three subsidiaries, 
+          each driving innovation in their respective fields.
         </motion.div>
         <motion.div
           initial="hidden"
@@ -169,10 +169,11 @@ const SecondaryButton = () => {
         visible: { opacity: 1, y: 0 },
       }}
       // style={{ boxShadow: "0 1px 3px #0000000f,0 2px 4px 1px #0000001a" }}
-      className="rounded-full md:mt-0 mt-6 bg-dark-80 p-[8px] flex items-center justify-center"
+      className="rounded-full md:mt-0 mt-6 bg-dark-80 p-2 flex items-center justify-center"
     >
-      <div className="px-2 py-1 text-sm bg-dark-80 rounded-full text-neutral-0 ">
-        🔥A Cloud GPU & DaaS Platform
+      <div className="px-2 text-sm font-medium md:text-base bg-dark-80 rounded-full text-neutral-0 ">
+        🔥A Deep Tech Company
+
       </div>
     </motion.div>
   );

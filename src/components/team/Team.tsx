@@ -1,25 +1,37 @@
 import { SectionHeading } from "@/components/SectionHeading";
 import { motion } from "framer-motion";
-import adityapillai from "@/assets/adityapillaiimg.png";
+
 const teamMembers = [
   {
     name: "Abhiraj Anil",
-    role: "CEO",
+    role: "Co-Founder",
     background: "CS @ IIITH | Sequoia Capital | NEA | JPMC",
     imageUrl: "/abhiraj.png",
   },
   {
-    name: "Adrianna Pinzariu",
-    role: "CTO",
-    background: "Harvard Business Review | Google | NASA",
-    imageUrl: "/adrianna.png",
+    name: "Kshitij Gajapure",
+    role: "Co-Founder/CXO",
+    background: "CS @ IIT Gandhinagar",
+    imageUrl: "/kshitij.png",
   },
   {
-    name: "Pratyaksh Panwar",
-    role: "COO",
-    background:
-      "CSE @ IITD | Samsung Solve For Tomorrow | Smart India Hackathon",
-    imageUrl: "/pratyaksh.png",
+    name: "Sujal Gupta",
+    role: "CEO",
+    background: "ECE @ IITH | Oracle Cloud",
+    imageUrl: "/sujal.png",
+  },
+  {
+    name: "Adithya Pillai",
+    role: "CXO",
+    background: "MBA @ IIMC |  Deloitte US | Texas Instruments",
+    imageUrl: "/adithya.png",
+  },
+  
+  {
+    name: "Devansh Jain",
+    role: "CXO",
+    background: "B.Tech @ IITKgp | BCG | Zomato",
+    imageUrl: "/devansh.png",
   },
   {
     name: "Wilson Duan",
@@ -27,6 +39,12 @@ const teamMembers = [
     background: "CS @ Caltech | SWE Intern @ MemVerge ",
     imageUrl: "/wilson.png",
   },
+  // {
+  //   name: "Bolem V S S Vidya Charan",
+  //   role: "Founding Engineer",
+  //   background: "CS @ IITD | Intern @ Accenture",
+  //   imageUrl: "/vidya.png",
+  // },
   {
     name: "Kumar Shivam",
     role: "Founding Member",
@@ -34,35 +52,29 @@ const teamMembers = [
     imageUrl: "/kumar.png",
   },
   {
-    name: "Ramcharan Velpuri",
-    role: "Founding Member",
-    background: "Healthomate | LevelUp Ventures",
-    imageUrl: "/ramcharan.png",
-  },
-  {
-    name: "Sujal Gupta",
+    name: "Abhishek Sharma",
     role: "Founding Engineer",
-    background: "ECE @ IITH | Oracle Cloud",
-    imageUrl: "/sujal.png",
+    background: "CS @ DTU",
+    imageUrl: "/sharma.png",
   },
   {
-    name: "Shruti Priya",
+    name: "Abhishek Gupta",
     role: "Founding Engineer",
-    background: "NIT Jamshedpur | GSSoC'24 | DRDO",
-    imageUrl: "/shruti.png",
+    background: "CS @ DTU",
+    imageUrl: "/gupta.png",
   },
   {
-    name: "Adithya Pillai",
-    role: "Founding Member",
-    background: "MBA @ IIMC |  Deloitte US | Texas Instruments",
-    imageUrl: adityapillai,
+    name: "Ashish Ranjan",
+    role: "Founder's Office",
+    background: "IPM, IIM Ranchi",
+    imageUrl: "/ashish.png",
   },
-  {
-    name: "Waffae Bakkali",
-    role: "Founding Member",
-    background: "Google | Amazon",
-    imageUrl: "/waffae.png",
-  },
+  // {
+  //   name: "Akshit Kumar",
+  //   role: "Founder's Office",
+  //   background: "B.Tech @ Kalinga University",
+  //   imageUrl: "/akshit.png",
+  // },
 ];
 
 const Team = () => {
