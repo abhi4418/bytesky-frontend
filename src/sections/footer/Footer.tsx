@@ -20,7 +20,7 @@ export function FooterSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <footer className="w-screen bg-dark-100 pt-20">
+    <footer className="w-screen pt-20">
       <motion.div
         ref={ref}
         initial={{ y: 100, opacity: 0 }}
