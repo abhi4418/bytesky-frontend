@@ -1,5 +1,4 @@
 import { AlignJustify, Menu, X } from "lucide-react";
-import logoimg from "../../assets/logoimg.avif";
 import logo2 from "../../assets/byteskylogo2.png";
 import { Button } from "../ui/button";
 import { useState } from "react";

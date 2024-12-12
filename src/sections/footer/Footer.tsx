@@ -1,7 +1,6 @@
 import { LinkedInIcon } from "@/components/LinkedInIcon";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import logoimg from "../../assets/logoimg.avif";
 import logoimg2 from "../../assets/byteskylogo2.png";
 type FooterLink = {
   name: string;
@@ -30,7 +29,7 @@ export function FooterSection() {
       >
         <img className=" h-[40px]" src={logoimg2} alt="logo" />
         <div className="flex flex-col gap-2 pl-2">
-          <div className="text-sm mb-[-6px]">ByteSky</div>
+          <div className="text-sm mb-[-6px]">ByteCompute</div>
           <div className="text-sm text-neutral-40">Easy Compute</div>
         </div>
       </motion.div>

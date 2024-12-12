@@ -41,7 +41,7 @@ const FAQSection = () => {
           className="space-y-6"
         >
           <SectionHeading title="FAQ" logoType="Link" className="w-fit md:mx-0 mx-auto" />
-          <h2 className="text-4xl font-bold text-neutral-0">Get to Know More About ByteSky</h2>
+          <h2 className="text-4xl font-bold text-neutral-0">Get to Know More About ByteCompute</h2>
           <p className="text-neutral-40">
             Explore the answers to common questions and learn how ByteCompute
             maximizes performance while minimizing costs.

@@ -63,7 +63,7 @@ export function FeatureSection() {
               Tailored Cloud Configurations
             </div>
             <div className="text-neutral-60 text pt-4">
-              Explore ByteSky's range of configurations, from Nimbus to ApexSky,
+              Explore ByteCompute's range of configurations, from Nimbus to ApexSky,
               designed to meet diverse computing needs. Our offerings cater to
               startups, enterprises, researchers, and more, with options ranging
               from basic cloud space to cutting-edge high-performance computing
@@ -219,7 +219,7 @@ export function FeatureSection() {
               <SectionHeading title="Traction" logoType="Cart" />
             </div>
             <div className="text-center md:text-left text-neutral-0 text-2xl font-semibold pt-4">
-              Hey there! We're ByteSky, revolutionizing cloud computing.
+              Hey there! We're ByteCompute, revolutionizing cloud computing.
             </div>
             <div className="text-neutral-60 text-base leading-tight pt-4 text-center md:text-left md:px-0 px-6">
               Driven by a relentless commitment to providing cost-effective,

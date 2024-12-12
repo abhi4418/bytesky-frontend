@@ -72,7 +72,7 @@ export default function HeroSection({}: Props) {
           }}
           className="text-neutral-40 md:px-0 px-10"
         >
-          ByteSky delivers high-performance GPU/CPU instances and virtual
+          ByteCompute delivers high-performance GPU/CPU instances and virtual
           machines at fraction of traditional costs.
         </motion.div>
         <motion.div

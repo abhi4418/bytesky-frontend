@@ -13,7 +13,7 @@ export interface ITestimonials {
 }
 const Testimonials: ITestimonials[] = [
   {
-    rating: 4,
+    rating: 5,
     review:
       "It’s so smooth, it feels like a native application. Sometimes I completely forget I'm working in a cloud PC and not on my own low end machine.",
     userName: "Aditya Gupta",
@@ -21,19 +21,19 @@ const Testimonials: ITestimonials[] = [
     userImg: useravatar,
   },
   {
-    rating: 4,
+    rating: 5,
     review:
       "The performance is so seamless that I often forget I'm using a cloud PC. It's like working on a high-end machine.",
-    userName: "Aditya Gupta",
-    userId: "IISC",
+    userName: "Shreyas V",
+    userId: "Harvard",
     userImg: useravatar,
   },
   {
-    rating: 4,
+    rating: 5,
     review:
-      "It’s hard to believe this isn’t a local setup. The responsiveness and speed make it feel just like a native application.",
-    userName: "Aditya Gupta",
-    userId: "IISC",
+      "It’s hard to believe this isn’t a local setup. The responsiveness and speed makes it feel just like a native application.",
+    userName: "Christopher Pondoc", 
+    userId: "Stanford",
     userImg: useravatar,
   },
 ];
