@@ -2,11 +2,11 @@ import AnimatedCard from "@/components/features/AnimatedCard";
 import { Logo5, Logo6, Logo7 } from "@/components/features/Logos";
 import { SectionHeading } from "@/components/SectionHeading";
 import { CardSpotlight } from "@/components/ui/card-spotlight";
-import byteaigraphic from "@/assets/byteaigraphic.webp";
+// import byteaigraphic from "@/assets/byteaigraphic.webp";
 import byteailogo from "@/assets/ByteAi_Logo_.png";
-import bytecomputegraphic from "@/assets/bytecomputegraphic.webp";
+// import bytecomputegraphic from "@/assets/bytecomputegraphic.webp";
 import bytecomputelogo from "@/assets/bytecomputelogo.png";
-import bytevisiongraphic from "@/assets/bytevisiongraphic.webp";
+// import bytevisiongraphic from "@/assets/bytevisiongraphic.webp";
 import bytevisionlogo from "@/assets/ByteVisionlogo.png";
 export function FeatureSection() {
   return (
@@ -20,7 +20,7 @@ export function FeatureSection() {
       <div className="pt-10 md:w-full lg:px-44 md:px-12 px-4 md:mx-auto grid grid-cols-1 gap-4">
         <div className="grid grid-cols-1 flex-wrap gap-4 max-w-screen-md md:mx-auto">
           <AnimatedCard direction="left">
-            <CardSpotlight className="md:min-h-[40rem]">
+            <CardSpotlight className="h-fit">
               <div className="text-neutral-0 center text-xl font-semibold text-center">
                 <img
                   src={byteailogo}
@@ -35,16 +35,16 @@ export function FeatureSection() {
                   testing for early AI model training.
                 </div>
               </div>
-              <div className="center py-6">
+              {/* <div className="center py-6">
                 <img
                   src={byteaigraphic}
                   className="aspect-video object-cover h-[300px] rounded-lg "
                 />
-              </div>
+              </div> */}
             </CardSpotlight>
           </AnimatedCard>
           <AnimatedCard direction="right">
-            <CardSpotlight className="md:min-h-[40rem]">
+            <CardSpotlight className="h-fit">
               <div className="text-neutral-0 center text-xl font-semibold text-center">
                 <img src={bytevisionlogo} className="w-36 " />
                 {/* <div>ByteAI</div> */}
@@ -56,16 +56,16 @@ export function FeatureSection() {
                 GPUs, enabling organizations to advance AI and machine learning
                 capabilities while reducing hardware costs.
               </div>
-              <div className="center py-6">
+              {/* <div className="center py-6">
                 <img
                   src={bytevisiongraphic}
                   className="aspect-video object-cover h-[300px] rounded-lg"
                 />
-              </div>
+              </div> */}
             </CardSpotlight>
           </AnimatedCard>
           <AnimatedCard direction="left">
-            <CardSpotlight className="md:min-h-[40rem]">
+            <CardSpotlight className="h-fit">
               <div className="text-neutral-0 center text-xl font-semibold text-center">
                 <img
                   src={bytecomputelogo}
@@ -80,12 +80,12 @@ export function FeatureSection() {
                 GPUs, enabling organizations to advance AI and machine learning
                 capabilities while reducing hardware costs.
               </div>
-              <div className="center py-6">
+              {/* <div className="center py-6">
                 <img
                   src={bytecomputegraphic}
                   className="aspect-video object-cover h-[300px] rounded-lg"
                 />
-              </div>
+              </div> */}
             </CardSpotlight>
           </AnimatedCard>
 

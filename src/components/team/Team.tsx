@@ -6,7 +6,7 @@ const teamMembers = [
     name: "Abhiraj Anil",
     role: "Co-Founder & CEO",
     background: "CS @ IIITH | Sequoia Capital | NEA | JPMC",
-    imageUrl: "/abhiraj.png",
+    imageUrl: "/abhiraj.jpg",
   },
   {
     name: "Anshika Shrivastava",
