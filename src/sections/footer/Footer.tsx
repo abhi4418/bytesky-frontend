@@ -1,16 +1,17 @@
 import { LinkedInIcon } from "@/components/LinkedInIcon";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import logoimg2 from "../../assets/byteskylogo2.png";
+// import logoimg2 from "../../assets/byteskylogo2.png";
+import logoimg2 from "../../assets/byteskylogowithbg.png";
 type FooterLink = {
   name: string;
   id: string;
 };
 
 const FooterLinks: FooterLink[] = [
-  { name: "Overview", id: "overview" },
+  // { name: "Overview", id: "overview" },
   { name: "Subsidiaries", id: "subsidiaries" },
-  { name: "Product", id: "testimonial" },
+  { name: "Team", id: "team" },
   { name: "Testimonial", id: "testimonial" },
   { name: "FAQ", id: "faq" },
 ];
@@ -27,9 +28,9 @@ export function FooterSection() {
         transition={{ duration: 0.5, ease: "easeOut" }}
         className="text-neutral-0 flex items-center justify-center w-full mx-auto"
       >
-        <img className=" h-[40px]" src={logoimg2} alt="logo" />
+        <img className="h-8" src={logoimg2} alt="logo" />
         <div className="flex flex-col gap-2 pl-2">
-          <div className="text-sm mb-[-6px]">ByteSky</div>
+          {/* <div className="text-sm mb-[-6px]">ByteSky</div> */}
         </div>
       </motion.div>
       <div className="w-full mx-auto flex gap-4 justify-center pt-8">

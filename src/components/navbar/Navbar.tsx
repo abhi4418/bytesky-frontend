@@ -1,11 +1,13 @@
 import { disablePageScroll, enablePageScroll } from "@fluejs/noscroll";
 import { motion } from "framer-motion";
 import { AlignJustify, Menu, X } from "lucide-react";
-import logo2 from "../../assets/byteskylogo2.png";
+// import logo2 from "../../assets/byteskylogo2.png";
+import logo2 from "../../assets/byteskylogowithbg.png";
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { useLocation } from "react-router-dom";
 import { Button } from "../ui/button";
+import { CONTACT_EMAIL } from "@/constants";
 interface INavItems {
   name: string;
   url: string;
@@ -52,7 +54,7 @@ export default function Navbar() {
       className={`fixed top-[56px] z-[100] shadow-sm shadow-neutral-80 w-full bg-dark-100 font-inter flex justify-between border-b border-neutral-90  lg:px-20 px-6 md:h-[80px] h-[64px] `}
     >
       <a href="#" className="flex  justify-center items-center gap-2">
-        <img src={logo2} className="md:h-20 h-16" />
+        <img src={logo2} className="md:h-12 h-8" />
         {/* <div className="md:text-xl">ByteSky</div> */}
       </a>
       <div
@@ -68,7 +70,7 @@ export default function Navbar() {
             hidden: { opacity: 0, y: isMobile ? "-20px" : "0px" },
             visible: { opacity: 1, y: 0 },
           }}
-          className="md:relative flex flex-col items-center justify-center gap-6 m-auto md:flex-row  w-full fixed right-0  md:py-0 top-32 md:top-0 py-4 md:border-none border-b border-neutral-80 bg-dark-100 rounded transition-all delay-100"
+          className="md:relative flex flex-col items-center justify-center gap-6 m-auto md:flex-row  w-full fixed right-0  md:py-0 top-[120px] md:top-0 py-4 md:border-none border-b border-neutral-80 bg-dark-100 rounded transition-all delay-100"
         >
           {NavItems.map((item, i) => (
             <a
@@ -88,7 +90,14 @@ export default function Navbar() {
             href="https://calendly.com/abhiraj-bytesky/introductory-call"
             target="_blank"
           >
-            <Button className="ml-4">Contact Us</Button>
+            <Button
+              className="ml-4"
+              onClick={() => {
+                window.location.href = CONTACT_EMAIL;
+              }}
+            >
+              Contact Us
+            </Button>
           </a>
         </motion.div>
       </div>

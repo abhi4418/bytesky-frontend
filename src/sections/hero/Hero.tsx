@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { SparklesCore } from "@/components/ui/sparkles";
+import { CONTACT_EMAIL } from "@/constants";
 import { motion } from "framer-motion";
 
 type Props = {};
@@ -72,8 +73,8 @@ export default function HeroSection({}: Props) {
           }}
           className="text-neutral-40 md:px-0 px-10 md:text-lg text-sm"
         >
-          ByteSky Group is a dynamic tech company with three subsidiaries, 
-          each driving innovation in their respective fields.
+          ByteSky Group is a dynamic tech company with three subsidiaries, each
+          driving innovation in their respective fields.
         </motion.div>
         <motion.div
           initial="hidden"
@@ -89,7 +90,13 @@ export default function HeroSection({}: Props) {
             href="https://calendly.com/abhiraj-bytesky/introductory-call"
             target="_blank"
           >
-            <Button>Launch now</Button>
+            <Button
+              onClick={() => {
+                window.location.href = CONTACT_EMAIL;
+              }}
+            >
+              Launch now
+            </Button>
           </a>
         </motion.div>
         <motion.div
@@ -173,7 +180,6 @@ const SecondaryButton = () => {
     >
       <div className="px-2 text-sm font-medium md:text-base bg-dark-80 rounded-full text-neutral-0 ">
         🔥A Deep Tech Company
-
       </div>
     </motion.div>
   );

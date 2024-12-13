@@ -2,6 +2,7 @@ import { useState } from "react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { CONTACT_EMAIL } from "@/constants";
 const FAQSection = () => {
   const faqs = [
     {
@@ -46,10 +47,10 @@ const FAQSection = () => {
             className="w-fit md:mx-0 mx-auto"
           />
           <h2 className="text-4xl font-bold text-neutral-0">
-            Get to Know More About ByteCompute
+            Get to Know More About ByteSky
           </h2>
           <p className="text-neutral-40">
-            Explore the answers to common questions and learn how ByteCompute
+            Explore the answers to common questions and learn how ByteSky
             maximizes performance while minimizing costs.
           </p>
           <div className="flex items-center space-x-4">
@@ -60,7 +61,7 @@ const FAQSection = () => {
             /> */}
             <Button
               onClick={() => {
-                window.location.href = "mailto:abhishek60501@gmail.com";
+                window.location.href = CONTACT_EMAIL;
               }}
               className="text-white text-sm px-6 py-3 rounded-md"
             >
