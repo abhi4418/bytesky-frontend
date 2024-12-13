@@ -14,7 +14,7 @@ interface INavItems {
   //   component: string;
 }
 const NavItems: INavItems[] = [
-  { name: "Features", url: "#features", id: "features" },
+  { name: "Subsidiaries", url: "#subsidiaries", id: "subsidiaries" },
   { name: "Team", url: "#team", id: "team" },
   { name: "Testimonial", url: "#testimonial", id: "testimonial" },
   { name: "FAQ", url: "#faq", id: "faq" },

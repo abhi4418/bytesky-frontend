@@ -9,7 +9,7 @@ type FooterLink = {
 
 const FooterLinks: FooterLink[] = [
   { name: "Overview", id: "overview" },
-  { name: "Features", id: "features" },
+  { name: "Subsidiaries", id: "subsidiaries" },
   { name: "Product", id: "testimonial" },
   { name: "Testimonial", id: "testimonial" },
   { name: "FAQ", id: "faq" },
@@ -29,8 +29,7 @@ export function FooterSection() {
       >
         <img className=" h-[40px]" src={logoimg2} alt="logo" />
         <div className="flex flex-col gap-2 pl-2">
-          <div className="text-sm mb-[-6px]">ByteCompute</div>
-          <div className="text-sm text-neutral-40">Easy Compute</div>
+          <div className="text-sm mb-[-6px]">ByteSky</div>
         </div>
       </motion.div>
       <div className="w-full mx-auto flex gap-4 justify-center pt-8">
