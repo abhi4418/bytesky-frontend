@@ -1,11 +1,13 @@
-import { AlignJustify, Menu, X } from "lucide-react";
-import logoimg from "../../assets/logoimg.avif";
-import { Button } from "../ui/button";
-import { useState } from "react";
 import { disablePageScroll, enablePageScroll } from "@fluejs/noscroll";
-import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
+import { AlignJustify, Menu, X } from "lucide-react";
+// import logo2 from "../../assets/byteskylogo2.png";
+import logo2 from "../../assets/byteskylogowithbg.png";
+import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
+import { useLocation } from "react-router-dom";
+import { Button } from "../ui/button";
+import { CONTACT_EMAIL } from "@/constants";
 interface INavItems {
   name: string;
   url: string;
@@ -14,7 +16,7 @@ interface INavItems {
   //   component: string;
 }
 const NavItems: INavItems[] = [
-  { name: "Features", url: "#features", id: "features" },
+  { name: "Subsidiaries", url: "#subsidiaries", id: "subsidiaries" },
   { name: "Team", url: "#team", id: "team" },
   { name: "Testimonial", url: "#testimonial", id: "testimonial" },
   { name: "FAQ", url: "#faq", id: "faq" },
@@ -49,15 +51,11 @@ export default function Navbar() {
         hidden: { opacity: 0, y: "50px" },
         visible: { opacity: 1, y: 0 },
       }}
-      className={`fixed top-[64px] z-[100] w-full bg-neutral-0 font-inter flex justify-between border-b border border-neutral-10 h-16  lg:px-20 px-6 `}
+      className={`fixed top-[56px] z-[100] shadow-sm shadow-neutral-80 w-full bg-dark-100 font-inter flex justify-between border-b border-neutral-90  lg:px-20 px-6 md:h-[80px] h-[64px] `}
     >
-      <a
-      
-        href="#"
-        className="flex  justify-center items-center gap-2"
-      >
-        <img src={logoimg} className="w-10 h-10" />
-        <div className="md:text-xl">ByteSky</div>
+      <a href="#" className="flex  justify-center items-center gap-2">
+        <img src={logo2} className="md:h-12 h-8" />
+        {/* <div className="md:text-xl">ByteSky</div> */}
       </a>
       <div
         className={` ${
@@ -72,18 +70,17 @@ export default function Navbar() {
             hidden: { opacity: 0, y: isMobile ? "-20px" : "0px" },
             visible: { opacity: 1, y: 0 },
           }}
-          className="md:relative flex flex-col items-center justify-center gap-6 m-auto md:flex-row bg-white w-full fixed right-0  md:py-0 top-32 md:top-0 py-4 md:border-none  border-b border-neutral-20 rounded transition-all delay-100"
+          className="md:relative flex flex-col items-center justify-center gap-6 m-auto md:flex-row  w-full fixed right-0  md:py-0 top-[120px] md:top-0 py-4 md:border-none border-b border-neutral-80 bg-dark-100 rounded transition-all delay-100"
         >
           {NavItems.map((item, i) => (
             <a
-             
               href={item.url}
               key={i}
               onClick={handleClick}
               className={`${
                 item.url === pathname.hash
-                  ? "text-neutral-60"
-                  : "hover:text-neutral-40 text-neutral-100"
+                  ? "text-neutral-40"
+                  : "hover:text-neutral-20 text-neutral-0"
               } md:w-fit   transition-all `}
             >
               {item.name}
@@ -93,20 +90,27 @@ export default function Navbar() {
             href="https://calendly.com/abhiraj-bytesky/introductory-call"
             target="_blank"
           >
-            <Button className="ml-4">Contact Us</Button>
+            <Button
+              className="ml-4"
+              onClick={() => {
+                window.location.href = CONTACT_EMAIL;
+              }}
+            >
+              Contact Us
+            </Button>
           </a>
         </motion.div>
       </div>
 
       {openNavigation ? (
         <X
-          className="text-neutral-40 flex items-center w-8 h-full md:hidden"
+          className="text-neutral-40 flex items-center w-8 h-full md:hidden my-auto"
           fill="none"
           onClick={toggleNavigation}
         />
       ) : (
         <AlignJustify
-          className="text-neutral-40 flex items-center w-8 h-full md:hidden"
+          className="text-neutral-40 flex items-center w-8 h-full md:hidden  my-auto"
           fill="none"
           onClick={toggleNavigation}
         />

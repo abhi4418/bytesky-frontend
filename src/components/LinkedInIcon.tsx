@@ -3,7 +3,7 @@ export function LinkedInIcon() {
         <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 256 256"
-            className="w-[28px] h-[28px] inline-block fill-current text-gray-600 flex-shrink-0"
+            className="w-[28px] h-[28px] inline-block fill-current text-neutral-0 flex-shrink-0"
             focusable="false"
         >
             <g className="fill-current">

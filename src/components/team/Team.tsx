@@ -1,73 +1,97 @@
 import { SectionHeading } from "@/components/SectionHeading";
 import { motion } from "framer-motion";
-import adityapillai from "@/assets/adityapillaiimg.png";
+
 const teamMembers = [
   {
     name: "Abhiraj Anil",
-    role: "CEO",
+    role: "Co-Founder & CEO",
     background: "CS @ IIITH | Sequoia Capital | NEA | JPMC",
     imageUrl: "/abhiraj.png",
   },
   {
-    name: "Adrianna Pinzariu",
-    role: "CTO",
-    background: "Harvard Business Review | Google | NASA",
-    imageUrl: "/adrianna.png",
+    name: "Anshika Shrivastava",
+    role: "Co-Founder",
+    background: "CS @ IITM | Google | McKinsey | IIMA",
+    imageUrl: "/anshika.jpg",
   },
-  {
-    name: "Pratyaksh Panwar",
-    role: "COO",
-    background:
-      "CSE @ IITD | Samsung Solve For Tomorrow | Smart India Hackathon",
-    imageUrl: "/pratyaksh.png",
-  },
-  {
-    name: "Wilson Duan",
-    role: "Founding Engineer",
-    background: "CS @ Caltech | SWE Intern @ MemVerge ",
-    imageUrl: "/wilson.png",
-  },
-  {
-    name: "Kumar Shivam",
-    role: "Founding Member",
-    background: "CSDA @ IITP | Open Source",
-    imageUrl: "/kumar.png",
-  },
-  {
-    name: "Ramcharan Velpuri",
-    role: "Founding Member",
-    background: "Healthomate | LevelUp Ventures",
-    imageUrl: "/ramcharan.png",
-  },
+  // {
+  //   name: "Kshitij Gajapure",
+  //   role: "Co-Founder/CXO",
+  //   background: "CS @ IIT Gandhinagar",
+  //   imageUrl: "/kshitij.png",
+  // },
   {
     name: "Sujal Gupta",
-    role: "Founding Engineer",
+    role: "CEO",
     background: "ECE @ IITH | Oracle Cloud",
     imageUrl: "/sujal.png",
   },
   {
-    name: "Shruti Priya",
-    role: "Founding Engineer",
-    background: "NIT Jamshedpur | GSSoC'24 | DRDO",
-    imageUrl: "/shruti.png",
+    name: "Pratyaksh Panwar",
+    role: "COO",
+    background: "CSE @ IITD | Samsung Solve For Tomorrow",
+    imageUrl: "/pratyaksh.png",
   },
-  {
-    name: "Adithya Pillai",
-    role: "Founding Member",
-    background: "MBA @ IIMC |  Deloitte US | Texas Instruments",
-    imageUrl: adityapillai,
-  },
-  {
-    name: "Waffae Bakkali",
-    role: "Founding Member",
-    background: "Google | Amazon",
-    imageUrl: "/waffae.png",
-  },
+  // {
+  //   name: "Adithya Pillai",
+  //   role: "CXO",
+  //   background: "MBA @ IIMC |  Deloitte US | Texas Instruments",
+  //   imageUrl: "/adithya.png",
+  // },
+
+  // {
+  //   name: "Devansh Jain",
+  //   role: "CXO",
+  //   background: "B.Tech @ IITKgp | BCG | Zomato",
+  //   imageUrl: "/devansh.png",
+  // },
+  // {
+  //   name: "Wilson Duan",
+  //   role: "Founding Engineer",
+  //   background: "CS @ Caltech | SWE Intern @ MemVerge ",
+  //   imageUrl: "/wilson.png",
+  // },
+  // {
+  //   name: "Bolem V S S Vidya Charan",
+  //   role: "Founding Engineer",
+  //   background: "CS @ IITD | Intern @ Accenture",
+  //   imageUrl: "/vidya.png",
+  // },
+  // {
+  //   name: "Kumar Shivam",
+  //   role: "Founding Member",
+  //   background: "CSDA @ IITP | Open Source",
+  //   imageUrl: "/kumar.png",
+  // },
+  // {
+  //   name: "Abhishek Sharma",
+  //   role: "Founding Engineer",
+  //   background: "CS @ DTU",
+  //   imageUrl: "/sharma.png",
+  // },
+  // {
+  //   name: "Abhishek Gupta",
+  //   role: "Founding Engineer",
+  //   background: "CS @ DTU",
+  //   imageUrl: "/gupta.png",
+  // },
+  // {
+  //   name: "Ashish Ranjan",
+  //   role: "Founder's Office",
+  //   background: "IPM, IIM Ranchi",
+  //   imageUrl: "/ashish.png",
+  // },
+  // {
+  //   name: "Akshit Kumar",
+  //   role: "Founder's Office",
+  //   background: "B.Tech @ Kalinga University",
+  //   imageUrl: "/akshit.png",
+  // },
 ];
 
 const Team = () => {
   return (
-    <div className=" px-6 flex flex-col items-center justify-center min-h-screen">
+    <div className=" px-6 flex flex-col items-center justify-center min-h-screen pt-20">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -84,10 +108,10 @@ const Team = () => {
           logoType="Lock"
           className="mb-4 center mx-auto"
         />
-        <h2 className="text-3xl font-bold text-center mb-2">
+        <h2 className="text-3xl font-bold text-neutral-0 text-center mb-2">
           We Made This Possible!
         </h2>
-        <p className="text-lg text-center mb-14 text-gray-600">
+        <p className="text-lg text-center mb-14 text-neutral-40">
           Driven innovators committed to revolutionizing cloud computing
         </p>
       </motion.div>
@@ -99,7 +123,7 @@ const Team = () => {
             whileHover={{ scale: 1.1 }}
             viewport={{ once: true }}
             transition={{
-              duration: 0.4,
+              duration: 0.1,
               // delay: 0.4,
             }}
             variants={{
@@ -107,7 +131,11 @@ const Team = () => {
               visible: { y: 0 },
             }}
             key={index}
-            className="p-6  rounded-lg text-center transform hover:scale-110 transition duration-300 border shadow border-[#e5e5e8] bg-[#fcfcfc] "
+            className="p-6  rounded-lg text-center transform hover:scale-110 transition duration-300  shadow shadow-dark-40"
+            style={{
+              background:
+                "radial-gradient(94.79997781055154% 94.79999776367805% at 6.367042537459778% 5.199996515206351%, var(--token-b5d64e1c-d37d-4055-8848-8c028ccb4878, rgb(25, 22, 36))  0%, var(--token-6e1dd630-cd02-44c9-b21a-a542833cf79b, rgb(10, 9, 13))  100%)",
+            }}
           >
             <div className="flex flex-col items-start">
               <img
@@ -115,11 +143,13 @@ const Team = () => {
                 alt={member.name}
                 className="w-80 h-72 object-contain rounded-lg mx-auto mb-10"
               />
-              <p className="bg-black text-white text-sm px-4 py-1 rounded-full mb-6">
+              <p className="bg-dark-50 text-neutral-20 text-sm px-4 py-1 rounded-full mb-6">
                 {member.role}
               </p>
-              <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-              <p className="text-sm text-gray-500">{member.background}</p>
+              <h3 className="text-xl font-semibold mb-2 text-neutral-0">
+                {member.name}
+              </h3>
+              <p className="text-sm text-neutral-40">{member.background}</p>
             </div>
           </motion.div>
         ))}

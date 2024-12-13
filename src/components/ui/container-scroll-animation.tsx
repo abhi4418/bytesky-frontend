@@ -2,7 +2,7 @@
 import React, { useRef } from "react";
 import { useScroll, useTransform, motion, MotionValue } from "framer-motion";
 
-const mobileD1 = [0, 30];
+const mobileD1 = [0,20];
 const mobileD2 = [0, 1];
 export const ContainerScroll = ({
   children,
@@ -28,13 +28,13 @@ export const ContainerScroll = ({
   }, []);
 
   const scaleDimensions = () => {
-    return isMobile ? [0.7, 0.9] : [1, 0.9];
+    return isMobile ? [.9, 0.8] : [1, 0.9];
   };
 
   const rotate = useTransform(
     scrollYProgress,
-    isMobile ? mobileD2 : [0, 0.3, 0.6, 1],
-    isMobile ? mobileD1 : [30, 20, 10, 0]
+    isMobile ? mobileD2 : [0, .4],
+    isMobile ? mobileD1 : [20,0]
   );
   const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
   const translate = useTransform(scrollYProgress, [0, 1], [0, -20]);

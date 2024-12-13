@@ -1,8 +1,16 @@
 import { useState } from "react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { CONTACT_EMAIL } from "@/constants";
 const FAQSection = () => {
   const faqs = [
+    {
+      question:
+        "What industries can benefit from ByteVision's computer vision solutions?",
+      answer:
+        "ByteVision's computer vision solutions are highly versatile and can benefit a wide range of industries, including:\n • Manufacturing: For automated quality control and workflow optimization in factories. \n • Retail: Enhancing customer experience through facial recognition and behavior analysis.\n • Security: Advanced surveillance systems for monitoring and threat detection.\n• Healthcare: Assisting in diagnostics and automating processes like imaging analysis.",
+    },
     {
       question:
         "How does ByteCompute achieve the lowest possible cost for GPU usage?",
@@ -10,22 +18,15 @@ const FAQSection = () => {
         "Unlike traditional methods that rely solely on high-end GPUs, ByteCompute utilizes low-demand GPUs. By combining these GPUs, ByteCompute achieves performance equivalent to high-end GPUs at a significantly lower cost, optimizing resources without compromising on quality.",
     },
     {
-      question:
-        "Why is better availability important, and how does ByteCompute achieve it?",
+      question: "How does ByteAi support early AI model training?",
       answer:
-        "When high-performance GPUs are scarce, it can be challenging to maintain efficiency. ByteCompute strategically pools low-demand GPUs, which enhances availability and ensures that users have consistent access to the computing power they need, even during peak demand periods.",
-    },
-    {
-      question: "How does ByteCompute ensure the sustainable use of resources?",
-      answer:
-        "Balancing availability and performance is key to ByteCompute’s approach to sustainable GPU usage. ByteCompute minimizes waste by optimizing the use of existing resources, ensuring that operations are both eco-friendly and efficient.",
+        "ByteAi offers programmatic data labeling and ML-based testing tools to streamline the preparation and validation of datasets. These services help train AI models effectively by ensuring data accuracy and reducing manual intervention, accelerating the development process while improving model performance.",
     },
   ];
 
   return (
-    <section id="faq" className="py-24">
+    <section id="faq" className="py-20">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
-        {/* Left Side Content */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -40,25 +41,35 @@ const FAQSection = () => {
           }}
           className="space-y-6"
         >
-          <SectionHeading title="FAQ" logoType="Link" className="w-fit md:mx-0 mx-auto" />
-          <h2 className="text-4xl font-bold">Get to Know More About ByteSky</h2>
-          <p className="text-gray-600">
-            Explore the answers to common questions and learn how ByteCompute
+          <SectionHeading
+            title="FAQ"
+            logoType="Link"
+            className="w-fit md:mx-0 mx-auto"
+          />
+          <h2 className="text-4xl font-bold text-neutral-0">
+            Get to Know More About ByteSky
+          </h2>
+          <p className="text-neutral-40">
+            Explore the answers to common questions and learn how ByteSky
             maximizes performance while minimizing costs.
           </p>
           <div className="flex items-center space-x-4">
-            <input
+            {/* <input
               type="email"
               placeholder="name@email.com"
               className="bg-gray-100 text-gray-500 px-3 py-2.5 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black w-64 text-sm"
-            />
-            <button className="bg-black text-white text-sm px-6 py-3 rounded-md">
+            /> */}
+            <Button
+              onClick={() => {
+                window.location.href = CONTACT_EMAIL;
+              }}
+              className="text-white text-sm px-6 py-3 rounded-md"
+            >
               Subscribe
-            </button>
+            </Button>
           </div>
         </motion.div>
 
-        {/* Right Side FAQs */}
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <FAQItem key={index} question={faq.question} answer={faq.answer} />
@@ -91,16 +102,16 @@ const FAQItem = ({
         hidden: { opacity: 0, x: 40 },
         visible: { opacity: 1, x: 0 },
       }}
-      className="border border-gray-300 rounded-md p-4 cursor-pointer"
+      className="border border-neutral-80 rounded-md p-4 cursor-pointer"
       onClick={() => setIsOpen(!isOpen)}
     >
-      <div className="flex justify-between items-center">
-        <h3 className="text-lg font-medium">{question}</h3>
-        <span>{isOpen ? "–" : "+"}</span>
+      <div className="flex justify-between items-center pr-2">
+        <h3 className="text-lg font-medium text-neutral-0">{question}</h3>
+        <span className="text-neutral-0">{isOpen ? "–" : "+"}</span>
       </div>
       {isOpen && (
-        <div className="mt-2 text-gray-600">
-          <p>{answer}</p>
+        <div className="mt-2 text-neutral-40">
+          <p style={{ whiteSpace: "pre-line" }}>{answer}</p>
         </div>
       )}
     </motion.div>

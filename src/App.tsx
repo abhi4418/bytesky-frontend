@@ -9,7 +9,7 @@ import TeamSection from "./sections/team/TeamSection";
 import FAQSection from "./sections/faq/Faq";
 function App() {
   return (
-    <div className="font-inter h-full w-full overflow-x-hidden">
+    <div className="font-inter h-full w-full overflow-x-hidden bg-gradient-to-bl from-dark-90 via-neutral-100 to-dark-90 ">
       <Header />
       <Navbar />
       <HeroSection />
