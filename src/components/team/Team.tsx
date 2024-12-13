@@ -11,7 +11,7 @@ const teamMembers = [
   {
     name: "Anshika Shrivastava",
     role: "Co-Founder",
-    background: "CS @ IITM | Google | McKinsey | Harvard",
+    background: "CS @ IITM | Google | McKinsey | IIMA",
     imageUrl: "/anshika.jpg",
   },
   // {

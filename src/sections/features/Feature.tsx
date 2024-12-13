@@ -18,7 +18,7 @@ export function FeatureSection() {
 
       {/* feature cards begin here */}
       <div className="pt-10 md:w-full lg:px-44 md:px-12 px-4 md:mx-auto grid grid-cols-1 gap-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 flex-wrap gap-4 w-full ">
+        <div className="grid grid-cols-1 flex-wrap gap-4 max-w-screen-md md:mx-auto">
           <AnimatedCard direction="left">
             <CardSpotlight className="md:min-h-[40rem]">
               <div className="text-neutral-0 center text-xl font-semibold text-center">
@@ -29,7 +29,7 @@ export function FeatureSection() {
                 {/* <div>ByteAI</div> */}
               </div>
               <div className="flex ">
-                <div className="text-neutral-40 text pt-4 ">
+                <div className="text-neutral-40 text-center pt-4 ">
                   ByteAi specializes in AI-driven solutions, offering services
                   like LLM development, programmatic data labeling, and ML-based
                   testing for early AI model training.
@@ -49,7 +49,7 @@ export function FeatureSection() {
                 <img src={bytevisionlogo} className="w-36 " />
                 {/* <div>ByteAI</div> */}
               </div>
-              <div className="text-neutral-40 text pt-4 ">
+              <div className="text-neutral-40 text-center pt-4 ">
                 ByteCompute revolutionizes tech infrastructure through a
                 cloud-based Desktop as a Service (DaaS) solution, along with
                 high-performance computing platforms powered by A100 and H100
@@ -73,7 +73,7 @@ export function FeatureSection() {
                 />
                 {/* <div>ByteAI</div> */}
               </div>
-              <div className="text-neutral-40 text pt-4 ">
+              <div className="text-neutral-40 text-center pt-4 ">
                 ByteCompute revolutionizes tech infrastructure through a
                 cloud-based Desktop as a Service (DaaS) solution, along with
                 high-performance computing platforms powered by A100 and H100
