@@ -55,7 +55,7 @@ export function FooterSection() {
           ©ByteSky Technologies Pvt. Ltd. 2024. All rights reserved. Privacy
           Policy.
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 justify-center">
           <a
             href="https://www.linkedin.com/company/byteskyofficial/"
             className="hover:cursor-pointer"
