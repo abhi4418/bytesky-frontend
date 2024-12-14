@@ -1,6 +1,6 @@
 import googleLogo from "@/assets/google-logo.png";
 import harvardUni from "@/assets/harvardimg.avif";
-import heroimg2 from "@/assets/heorimg2.avif";
+import heroimg2 from "@/assets/heroimg2.avif"
 import hyderabadUni from "@/assets/hyderabaduni.avif";
 import microsoftLogo from "@/assets/microsoft-logo.png";
 import nanyanuni from "@/assets/nanyanuni.avif";
@@ -97,6 +97,7 @@ export default function HeroSection({}: Props) {
             >
               Launch now
             </Button>
+            
           </a>
         </motion.div>
         <motion.div

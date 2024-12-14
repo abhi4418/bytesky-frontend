@@ -3,6 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 // import logoimg2 from "../../assets/byteskylogo2.png";
 import logoimg2 from "../../assets/byteskylogowithbg.png";
+import { XLogo } from "@/components/XLogo";
 type FooterLink = {
   name: string;
   id: string;
@@ -51,16 +52,25 @@ export function FooterSection() {
       <div className="mt-20 max-w-screen-lg mx-auto h-[1px] bg-neutral-60"></div>
       <div className="flex md:flex-row md:justify-between max-w-screen-lg mx-auto pt-4 text-sm text-neutral-0 flex-col gap-4 justify-center text-center pb-10 md:pb-0">
         <div className="md:text-center">
-          ©ByteSky Technologies Pvt. Ltd. 2024. All rights reserved. Privacy
+          ©ByteSky Group Pvt. Ltd. 2024. All rights reserved. Privacy
           Policy.
         </div>
-        <a
-          href="https://www.linkedin.com/company/byteskyofficial/"
-          className="hover:cursor-pointer"
-          target="_blank"
-        >
+        <div className="flex items-center gap-2 justify-center">
+          <a
+            href="https://www.linkedin.com/company/byteskyofficial/"
+            className="hover:cursor-pointer"
+            target="_blank"
+          >
           <LinkedInIcon />
-        </a>
+          </a>
+          <a
+            href="https://x.com/byteskygroup"
+            className="hover:cursor-pointer"
+            target="_blank"
+          >
+          <XLogo />
+          </a>
+        </div>
       </div>
     </footer>
   );
