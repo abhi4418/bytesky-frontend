@@ -50,11 +50,9 @@ export function FeatureSection() {
                 {/* <div>ByteAI</div> */}
               </div>
               <div className="text-neutral-40 text-center pt-4 ">
-                ByteCompute revolutionizes tech infrastructure through a
-                cloud-based Desktop as a Service (DaaS) solution, along with
-                high-performance computing platforms powered by A100 and H100
-                GPUs, enabling organizations to advance AI and machine learning
-                capabilities while reducing hardware costs.
+                ByteVision focuses on computer vision, providing automated surveillance
+                and workflow optimization for factory environments as well as immense vitality in
+                the healthcare sector.
               </div>
               {/* <div className="center py-6">
                 <img

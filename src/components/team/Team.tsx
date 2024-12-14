@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 const teamMembers = [
   {
     name: "Abhiraj Anil",
-    role: "Co-Founder & CEO",
-    background: "CS @ IIITH | Sequoia Capital | NEA | JPMC",
+    role: "Co-Founder",
+    background: "CS @ IIITH | Ex-Intern @ Sequoia Capital, NEA, JPMC",
     imageUrl: "/abhiraj.jpg",
   },
   {
-    name: "Anshika Shrivastava",
+    name: "Anshika Srivastava",
     role: "Co-Founder",
-    background: "CS @ IITM | Google | McKinsey | IIMA",
+    background: "CS @ IITM, IIMA |  Ex-Google, Meta, BCG, McKinsey",
     imageUrl: "/anshika.jpg",
   },
   // {
@@ -22,14 +22,14 @@ const teamMembers = [
   // },
   {
     name: "Sujal Gupta",
-    role: "CEO",
-    background: "ECE @ IITH | Oracle Cloud",
+    role: "Co-Founder",
+    background: "ECE @ IITH | Ex-Intern @ Oracle Cloud",
     imageUrl: "/sujal.png",
   },
   {
     name: "Pratyaksh Panwar",
-    role: "COO",
-    background: "CSE @ IITD | Samsung Solve For Tomorrow",
+    role: "Co-Founder",
+    background: "CS @ IITD | Samsung Solve For Tomorrow",
     imageUrl: "/pratyaksh.png",
   },
   // {
@@ -149,7 +149,7 @@ const Team = () => {
               <h3 className="text-xl font-semibold mb-2 text-neutral-0">
                 {member.name}
               </h3>
-              <p className="text-sm text-neutral-40">{member.background}</p>
+              <p className="text-sm text-neutral-40 text-left">{member.background}</p>
             </div>
           </motion.div>
         ))}
