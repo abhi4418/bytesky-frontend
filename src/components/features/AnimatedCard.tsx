@@ -26,7 +26,7 @@ function AnimatedCard({
       ref={ref}
       initial={initialPosition[direction]} // Set initial based on direction
       animate={inView ? { x: 0, y: 0, opacity: 1 } : {}} // Animate to visible position
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.8 , ease: "easeOut"}}
       className=" rounded"
     >
       {children}
