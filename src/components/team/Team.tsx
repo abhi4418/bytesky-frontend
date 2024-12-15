@@ -23,7 +23,7 @@ const teamMembers = [
   {
     name: "Sujal Gupta",
     role: "Co-Founder",
-    background: "ECE @ IITH | Ex-Intern @ Oracle Cloud",
+    background: "ECE @ IITH | Oracle Cloud",
     imageUrl: "/sujal.png",
   },
   {
